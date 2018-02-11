@@ -1,0 +1,45 @@
+/* inital page style */
+body, html {
+      background-color: coral;
+ }
+
+.container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial;
+}
+
+#burger-submit:focus {
+     outline: none;
+     border: 2px solid black;
+}
+
+/* radio buttons */
+
+
+/* burgers section */
+
+.all-burgers-section {
+    display: grid;
+    grid-template-columns: 350px 350px;
+}
+.undevoured-burgers-section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.devoured-burgers-section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#devoured-burgers-header, .burger-list-item {
+      text-align: left;
+}
+
+.burger-list-item {
+    font-size: .5em;
+    text-decoration: line-through;
+}
+
